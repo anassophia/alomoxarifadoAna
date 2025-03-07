@@ -11,15 +11,16 @@ namespace AlmoxarifadoBackAPI.Repositorio
             _db = db;
         }
 
-        public void Add(Produto obj)
+        public void Add(Produto produto)
         {
-            
-            _db.Produto.Add(obj);
+
+            _db.Produto.Add(produto);
             _db.SaveChanges();
         }
 
-        public List<Produto> GetAll() { 
-          return _db.Produto.ToList();
+        public List<Produto> GetAll()
+        {
+            return _db.Produto.ToList();
         }
 
     }

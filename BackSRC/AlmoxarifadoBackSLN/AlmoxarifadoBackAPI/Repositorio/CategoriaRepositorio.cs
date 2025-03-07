@@ -13,7 +13,7 @@ namespace AlmoxarifadoBackAPI.Repositorio
 
         public void Add(Categoria categoria)
         {
-            
+
             _db.Categoria.Add(categoria);
             _db.SaveChanges();
         }

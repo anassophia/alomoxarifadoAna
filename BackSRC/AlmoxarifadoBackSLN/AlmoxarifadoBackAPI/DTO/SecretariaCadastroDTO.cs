@@ -1,12 +1,12 @@
 ﻿namespace AlmoxarifadoBackAPI.DTO
 {
-    public class SaidaCadastroDTO
+    public class SecretariaCadastroDTO
     {
-      
-
-        public string Descricao { get; set; }
-        public int Quantidadeatual { get; set; }
-        public int QuantidadedeSaida { get; set; }
+        public int Nome { get; set; }
+        public int Telefone { get; set; }
+        public int Estado { get; set; }
+        public int Cidade { get; set; }
+        public int CNPJ { get; set; }
 
     }
 }

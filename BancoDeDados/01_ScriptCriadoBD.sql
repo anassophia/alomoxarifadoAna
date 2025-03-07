@@ -66,7 +66,7 @@ INSERT INTO ENTRADA([Descricao], [DATAENTRADA],[QUANTIDADEATUAL])
 		
 		SELECT*FROM ENTRADA
 
-		CREATE TABLE SECRETARIA1(
+		CREATE TABLE SECRETARIA(
    codigo int identity(1,1) primary key,
   Descricao varchar(100),
   Nome varchar(100),
@@ -75,14 +75,14 @@ INSERT INTO ENTRADA([Descricao], [DATAENTRADA],[QUANTIDADEATUAL])
   Cidade varchar(100)  ,
   CNPJ varchar(100)  
 		)
-		INSERT INTO SECRETARIA1(Descricao ,[Nome], [Telefone], [Estado], [Cidade], [CNPJ])
+		INSERT INTO SECRETARIA(Descricao ,Nome, Telefone, Estado, Cidade, CNPJ)
 		values ('Alimentos','SECRETARIA ESTANCIA', '(79)99564321', 'Sergipe', 'Estancia','00906704532')
 
 		
-		INSERT INTO SECRETARIA1([Descricao], [Nome], [Telefone], [Estado], [Cidade], [CNPJ])
+		INSERT INTO SECRETARIA(Descricao, Nome, Telefone, Estado, Cidade, CNPJ)
 		values ('Eletronicos','SeCRETARIA ARACAJU', '(79)95564671', 'Sergipe', 'Aracaju','01906704295')
 		
-		SELECT*FROM SECRETARIA1
+		SELECT*FROM SECRETARIA
 
 		CREATE TABLE ITEMENTRADA(
 		Codigo int identity(1,1) primary key,
@@ -92,7 +92,7 @@ INSERT INTO ENTRADA([Descricao], [DATAENTRADA],[QUANTIDADEATUAL])
 		Preço VARCHAR(100),
 		Total int,
 		)
-		insert into ITEMENTRADA([DATAENTRADA],[CodigoProduto],[Quantidade],[Preço],[Total])
+		insert into ITEMENTRADA(DATAENTRADA,CodigoProduto,Quantidade,Preço,Total)
 		VALUES ('23/02/2025', '', '5', '1000','67')
 		
 		SELECT*FROM ITEMENTRADA
@@ -104,6 +104,6 @@ INSERT INTO ENTRADA([Descricao], [DATAENTRADA],[QUANTIDADEATUAL])
          Quantidadeatual int,
          QuantidadedeSaida int
 		 )
-		 insert into SAIDA ([Descricao], [Quantidadeatual],[QuantidadedeSaida])
+		 insert into SAIDA (Descricao, Quantidadeatual,QuantidadedeSaida)
 		 VALUES ('Alimentos', '100','54')
 		 SELECT*FROM SAIDA
